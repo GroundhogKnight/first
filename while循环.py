@@ -23,15 +23,28 @@
 
 # ------------1-2+3-4...-100=?---------
 
-# ---------------
-while True:
-    content = input("输入金币数：")
-    content = int(content)
-    if content>=10:
-        print(content,"个金币可以买熊熊！")
-    else:
-        print("金币不足哦！")
-    # break   #停止
+# ---------------continue：停止本次循环，break:停止循环-----------
+# while True:
+#     content = input("输入金币数：")
+#     content = int(content)
+#     if content>=10:
+#         print(content,"个金币可以买熊熊！")
+#     else:
+#         print("金币不足哦！")
+#         content=10-content
+#         b="还差{}个！"
+#         print(b.format(content))
+#     continue
+
+#------------------------------------1~10，跳过4-------------
+i=1
+while i<=10:
+    if i==4:
+        i=i+1
+        continue #终止本次循环，继续执行下一次循环，用于排除本次
+    print(i)
+    i=i+1
+
 
 
 
